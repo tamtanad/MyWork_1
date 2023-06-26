@@ -26,10 +26,7 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   }
 
-  .row{
-    padding: 35px 0px 35px 0px;
-    margin: 0px;
-  }
+ 
 
   .scroll{
     position:fixed;
@@ -41,11 +38,6 @@ body {
     align-items: center;
     z-index: 2;
     }
-
-.logo-menu{
-  display: flex;
-  justify-content: flex-end;
-}
 
 .nav-bar{
   width: 50%;
@@ -63,8 +55,21 @@ body {
   font-family: "Playfair Display", sans-serif;
 }
 
-.link:hover{
+
+.link-nav:hover{
   color: #bdb2a0;
+}
+
+.link-nav{
+  color:  #38280e;
+}
+
+.search{
+  width: 20%;
+  background-color: transparent;
+  color: #4d0b0b;
+  font-size: 17px;
+  border: 2px solid #372D2B;;
 }
 
 .go-top {
@@ -395,20 +400,6 @@ transition: all 0.4s ease-in-out;
 }
 
 .col-gallery:hover .img::after {
-  opacity: 1;
-  cursor: pointer;
-}
-
-.gallery-overlay{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  transform: translate(-50%, -50%);
-  transition: all 0.5s ease-in;
-}
-
-.col-gallery:hover .gallery-overlay{
   opacity: 1;
   cursor: pointer;
 }

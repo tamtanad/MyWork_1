@@ -18,19 +18,38 @@
   </head>
   <body>
   <div class="container-full">  <!--TODO full continer start -->
-    <div id="scroll" class="scroll col-menu" > <!-- menu start -->
+    <div id="scroll" class="col-lg-3 col-sm-6 scroll col-menu" > <!-- menu start -->
       <div class="logo-menu">
         <img src="./images/logo.webp">
       </div>
       <div class="nav-bar">
         <ul class="nav">
-          <li class="link home">Home</li>
-          <li class="link about">About</li>
-          <li class="link works">Our Works</li>
-          <li class="link book">Booked</li>
-          <li class="link test">Testimonials</li>
-          <li class="link contact">Contacts</li>
+          <li class="link-nav"><a href="index.html" class="link-nav text-decoration-none fw-bolder fs-5">Home</a></li>
+          <li class="link-nav"><a href="projects.html" class="link-nav text-decoration-none fw-bolder fs-5">Projects</a></li>
+          <li class="link-nav"><a href="services.html" class="link-nav text-decoration-none fw-bolder fs-5" >Services</a></li>
+          <li class="link-nav"><a href="book.html" class=" link-nav text-decoration-none fw-bolder fs-5">Booked</a></li>
+          <li class="link-nav"><a href="contact.html" class="link-nav text-decoration-none fw-bolder fs-5">Contacts</a></li>
         </ul>
+      </div>
+      <input class="search" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+      <datalist id="datalistOptions">
+        <option value="Services">
+        <option value="Blog">
+        <option value="Book">
+        <option value="Contact">
+        <option value="Gallery">
+      </datalist>
+      <div class="language">
+        <div class="switcher-language">
+          <ul class="switcher ">
+            <li class="">
+              <a href="" class="text-decoration-none">GE</a>
+            </li>
+            <li>
+              <a href="" class="text-decoration-none">ENG</a>
+            </li>
+          </ul>
+        </div>
       </div>
       <a href="#" class="go-top" style="display: inline;">
         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi-arrow-up-square-fill arrow" viewBox="0 0 16 16">
@@ -39,18 +58,21 @@
     </div>  <!-- menu end -->
 
     <div class="container container-fluid"> <!--TODO HEADER TITLE START -->
-      <div class="row row-menu">
-        <div class="title">
-          <div class="button-col">
-            <h5 class="h5">Luxury space that you can afford</h5>
-            <h1 class="h1">
-              Where DreamsCome True
-            </h1>
-            <button class="btn-header">READ MORE</button>
-          </div>
-        </div>
+      <div class="row row-menu" id="title">
+        
       </div>
     </div> <!--TODO HEADER TITLE END -->
+    <div class="modal fade" id="title-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="services-modalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body"></div>
+        </div>
+      </div>
+    </div>
+
     <div class="container-xxl about-furniture">  <!--TODO about-furniture START -->
       <div class="row-furniture">
         <p class="paragraph-furniture">
@@ -81,114 +103,24 @@
                 <span class="text-divider">
                 </span>
               </div>      <!-- header-services end -->
-              <div class="row-section-services">  <!-- row-section-services START -->
-            <!-- table col start-->
-                <div class="col-4 col-services d-flex justify-content-center">    <!-- col-services START -->
-                  <div class="box box-services">            
-                    <div class="box-services-icon">     
-                      <img src="images/products/icon-1.webp">
-                    </div>                          
-                    <div class="box-services-content">    
-                      <h1 class="box-content-title">Tables</h1>
-                      <p class="box-content-description">
-                        Manufacturing craft tables for as 
-                        long as we do means working with 
-                        miscellaneous visual styles and types of materials…
-                      </p>
-                    </div>    
-                  </div>
-                </div>      <!-- col-services end -->
-            <!-- table col end-->
-            <!-- chair col start-->
-                <div class="col-4 col-services  d-flex justify-content-center">
-                  <div class="box box-services">
-                    <div class="box-services-icon">
-                      <img src="images/products/icon2.webp">
-                    </div>
-                    <div class="box-services-content">
-                      <h1 class="box-content-title">Chair & Armchairs</h1>
-                      <p class="box-content-description">
-                        Among all other furniture items that we manufacture, 
-                        the chairs probably 
-                        showcase the biggest variety of styles!
-                      </p>
-                    </div>
-                  </div>
-                </div>
-            <!-- chair col end-->
-            <!-- bedroom col start-->
-                <div class="col-4 col-services d-flex justify-content-center">
-                  <div class="box box-services">
-                    <div class="box-services-icon">
-                      <img src="images/products/icon3.webp">
-                    </div>
-                    <div class="box-services-content">
-                      <h1 class="box-content-title">Bedroom Furniture</h1>
-                      <p class="box-content-description">
-                        With bedroom being one of the most important
-                        lifestyle places in your house,
-                        equipping it with some quality furniture…
-                      </p>
-                    </div>
-                  </div>
-                </div>
-            <!-- bedroom col end-->
-            <!-- houseware col start-->
-                <div class="col-4 col-services d-flex justify-content-center">
-                  <div class="box box-services">
-                    <div class="box-services-icon">
-                      <img src="images/products/icon4.webp">
-                    </div>
-                    <div class="box-services-content">
-                      <h1 class="box-content-title">Houseware Furniture</h1>
-                      <p class="box-content-description">
-                        Just as it goes for major and small home appliances, 
-                        the home furniture is either a big
-                        one like a dining table or a small one…
-                      </p>
-                    </div>
-                  </div>
-                </div>
-            <!-- houseware col end-->
-            <!-- office col start-->
-                <div class="col-4 col-services d-flex justify-content-center">
-                  <div class="box box-services">
-                    <div class="box-services-icon">
-                      <img src="images/products/icon5.webp">
-                    </div>
-                    <div class="box-services-content">
-                      <h1 class="box-content-title">Office Furniture</h1>
-                      <p class="box-content-description">
-                        Every single office, with either 2 or 222 
-                        employees working there needs a 
-                        set of essential furniture items.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-            <!-- ofice col end-->
-            <!-- kitchen col start-->
-                <div class="col-4 col-services d-flex justify-content-center">
-                  <div class="box box-services">
-                    <div class="box-services-icon">
-                      <img src="images/products/icon6.webp">
-                    </div>
-                    <div class="box-services-content">
-                      <h1 class="box-content-title">Kitchen Furniture</h1>
-                      <p class="box-content-description">
-                        The kitchen is by far one of the most 
-                        essential places for your lifestyle. 
-                        This is why having it equipped with some…
-                      </p>
-                    </div>
-                  </div>
-                </div>
-            <!-- kitchen col end-->
+              <div class="row-section-services" id="services">  <!-- row-section-services START -->
+            
               </div>      <!-- row-section-services end -->
             </div>      <!-- wap-services end -->
           </div>      <!-- col-services end -->
         </div>      <!-- row-services end -->
       </div>      <!--TODO section-services end -->
+                  <!-- services Modal -->
+<div class="modal fade" id="services-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="services-modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+</div>
     <div class="section-person">  <!--TODO section-person start -->
       <div class="row-person">
         <div class="col-person">
@@ -228,103 +160,8 @@
         <span class="divider">
         </span>
       </div>
-      <div class="row-gallery">
-        <div class="col-lg-3 col-md-6 col-gallery ">
-          <a data-fancybox="gallery" data-src="images/gallery/gallery-1.jpg" class="img">
-            <img class="gallery-img"  src="images/gallery/gallery-1.jpg">
-          </a>
-          <div class="gallery-overlay">
-            <i class="bi bi-zoom-in fa-4x "></i>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-gallery">
-          <a data-fancybox="gallery" data-src="images/gallery/gallery-2.jpg" class="img">
-            <img class="gallery-img"  src="images/gallery/gallery-2.jpg">
-          </a>
-          <div class="gallery-overlay">
-            <i class="bi bi-zoom-in fa-4x "></i>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-gallery">
-          <a data-fancybox="gallery" data-src="images/gallery/gallery-3.jpg" class="img">
-            <img class="gallery-img"  src="images/gallery/gallery-3.jpg">
-          </a>
-          <div class="gallery-overlay">
-            <i class="bi bi-zoom-in fa-4x "></i>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-gallery">
-          <a data-fancybox="gallery" data-src="images/gallery/gallery-4.jpg" class="img">
-            <img class="gallery-img"  src="images/gallery/gallery-4.jpg">
-          </a>
-          <div class="gallery-overlay">
-            <i class="bi bi-zoom-in fa-4x "></i>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-gallery">
-          <a data-fancybox="gallery" data-src="images/gallery/gallery-5.jpg" class="img">
-            <img class="gallery-img"  src="images/gallery/gallery-5.jpg">
-          </a>
-          <div class="gallery-overlay">
-            <i class="bi bi-zoom-in fa-4x "></i>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-gallery">
-          <a data-fancybox="gallery" data-src="images/gallery/gallery-6.jpg" class="img">
-            <img class="gallery-img"  src="images/gallery/gallery-6.jpg">
-          </a>
-          <div class="gallery-overlay">
-            <i class="bi bi-zoom-in fa-4x "></i>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-gallery">
-          <a data-fancybox="gallery" data-src="images/gallery/gallery-7.jpg" class="img">
-            <img class="gallery-img"  src="images/gallery/gallery-7.jpg">
-          </a>
-          <div class="gallery-overlay">
-            <i class="bi bi-zoom-in fa-4x "></i>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-gallery">
-          <a data-fancybox="gallery" data-src="images/gallery/gallery-8.jpg" class="img">
-            <img class="gallery-img"  src="images/gallery/gallery-8.jpg">
-          </a>
-          <div class="gallery-overlay">
-            <i class="bi bi-zoom-in fa-4x "></i>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-gallery">
-          <a data-fancybox="gallery" data-src="images/gallery/gallery-9.jpg" class="img">
-            <img class="gallery-img"  src="images/gallery/gallery-9.jpg">
-          </a>
-          <div class="gallery-overlay">
-            <i class="bi bi-zoom-in fa-4x "></i>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-gallery">
-          <a data-fancybox="gallery" data-src="images/gallery/gallery-10.jpg" class="img">
-            <img class="gallery-img"  src="images/gallery/gallery-10.jpg">
-          </a>
-          <div class="gallery-overlay">
-            <i class="bi bi-zoom-in fa-4x "></i>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-gallery">
-          <a data-fancybox="gallery" data-src="images/gallery/gallery-11.jpg" class="img">
-            <img class="gallery-img"  src="images/gallery/gallery-11.jpg">
-          </a>
-          <div class="gallery-overlay">
-            <i class="bi bi-zoom-in fa-4x "></i>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-gallery">
-          <a data-fancybox="gallery" data-src="images/gallery/gallery-12.jpg" class="img">
-            <img class="gallery-img"  src="images/gallery/gallery-12.jpg">
-          </a>
-          <div class="gallery-overlay">
-            <i class="bi bi-zoom-in fa-4x "></i>
-          </div>
-        </div>
+      <div class="row-gallery" id="gallery">
+        
       </div>
     </div>    <!--TODO container-gallery end -->
     <div class="container-blog">  <!--TODO container-blog start -->
@@ -335,69 +172,22 @@
         <span class="divider-blog">
         </span>
       </div>
-      <div class="row-blog">
-        <div class="col-lg-4 col-md-6 col-blog p-3">
-          <div class="card ">
-            <img src="images/blog/blog-1.jpg" class="card-img-blog" >
-            <div class="card-body p-0">
-              <h5 class="card-title">
-                Why Handcrafted Furniture Lasts Longer
-              </h5>
-              <p class="card-description">
-                Well, if you ask me it’s not just about
-                the quality of either the materials used
-                in manufacturing or the...
-              </p>
-              <p class="card-date">
-                <small class="text-body-secondary">
-                  SEPTEMBER 13, 2022
-                </small>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-blog p-3">
-          <div class="card ">
-            <img src="images/blog/blog-2.jpg" class="card-img-blog" >
-            <div class="card-body p-0">
-              <h5 class="card-title">
-                Decorating 101: How to Shop for Furniture
-              </h5>
-              <p class="card-description">
-                I suppose that it is important for 
-                me to clarify that the topic for 
-                this story revolves solely around choosing...
-              </p>
-              <p class="card-date">
-                <small class="text-body-secondary">
-                  SEPTEMBER 13, 2022
-                </small>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-blog p-3">
-          <div class="card ">
-            <img src="images/blog/blog-3.jpg" class="card-img-blog" >
-            <div class="card-body p-0">
-              <h5 class="card-title">
-                Arranging the Furniture at Your Home
-              </h5>
-              <p class="card-description">
-                Well, all I can say on the matter is that the
-                composition and the arrangement
-                and pairing of one furniture...</p>
-              <p class="card-date">
-                <small class="text-body-secondary">
-                  SEPTEMBER 13, 2022
-                </small>
-              </p>
-            </div>
-          </div>
-        </div>
+      <div class="row-blog" id="blogs">
+        
       </div>
-      <button type="button" class=" btn-blog">SEE ALL</button>
     </div>    <!--TODO container-blog end -->
+            <!-- Product Modal -->
+<div class="modal fade" id="product-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="product-modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+</div>
+
     <div class="container-contact">   <!--TODO container-contact start -->
       <div class="contact-title">
         <h2 class="contact-title-header">
@@ -486,13 +276,20 @@
     </div>
   </div> <!--TODO full container end -->
 
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
   <script>
     Fancybox.bind('[data-fancybox]', {});    
   </script>
   <script src="scripts/app.js" type="module"></script>
-  <script type="module">
+  <script type="module" defer>
+    import {readMore,showProduct,showCard } from './scripts/functions.js'
+    window.readMore = readMore
+    window.showProduct = showProduct
+    window.showCard = showCard
   </script>
   </body>
 </html>
